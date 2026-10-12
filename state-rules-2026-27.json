@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 1,
+  "season": "2026-27",
+  "compiled": "2026-10-12",
+  "disclaimer": "Compiled from state agency publications for convenience. Always verify with the official state regulations before hunting.",
+  "federalDefault": {
+    "waterfowl": {
+      "start": {
+        "event": "sunrise",
+        "offsetMinutes": -30
+      },
+      "end": {
+        "event": "sunset",
+        "offsetMinutes": 0
+      }
+    },
+    "description": "One-half hour before sunrise to sunset; states may only be more restrictive, except where federal frameworks allow special seasons (e.g., September Canada goose, Light Goose Conservation Order)."
+  },
+  "hoursFormat": "start/end use either {event: sunrise|sunset, offsetMinutes} or {time: 'HH:MM' local}",
+  "urlStatusValues": {
+    "verified": "Confirmed from an official source during research",
+    "homepage-unverified": "Agency homepage from general knowledge; run the link check and replace with a regulations deep link"
+  },
+  "states": {
+    "AL": {
+      "name": "Alabama",
+      "agency": "Alabama DCNR Wildlife and Freshwater Fisheries",
+      "regulationsURL": "https://www.outdooralabama.com",
+      "urlStatus": "homepage-unverified",
+      "eregulationsURL": "https://www.eregulations.com/alabama/hunting",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "AK": {
+      "name": "Alaska",
+      "agency": "Alaska Department of Fish and Game",
+      "regulationsURL": "https://www.adfg.alaska.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "AZ": {
+      "name": "Arizona",
+      "agency": "Arizona Game and Fish Department",
+      "regulationsURL": "https://www.azgfd.com/hunting/regulations/",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "AR": {
+      "name": "Arkansas",
+      "agency": "Arkansas Game and Fish Commission",
+      "regulationsURL": "https://www.agfc.com",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "CA": {
+      "name": "California",
+      "agency": "California Department of Fish and Wildlife",
+      "regulationsURL": "https://wildlife.ca.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "CO": {
+      "name": "Colorado",
+      "agency": "Colorado Parks and Wildlife",
+      "regulationsURL": "https://cpw.state.co.us",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "CT": {
+      "name": "Connecticut",
+      "agency": "Connecticut DEEP Wildlife Division",
+      "regulationsURL": "https://portal.ct.gov/deep",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "DE": {
+      "name": "Delaware",
+      "agency": "DNREC Division of Fish and Wildlife",
+      "regulationsURL": "https://dnrec.delaware.gov/fish-wildlife/hunting/",
+      "urlStatus": "verified",
+      "eregulationsURL": "https://www.eregulations.com/delaware/hunting",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": true,
+      "sundayMigratoryBirdHunting": {
+        "allowed": true,
+        "note": "Sunday waterfowl hunting allowed a half hour before sunrise to sunset, on private land with permission and designated public lands (check wildlife area maps).",
+        "sources": [
+          "https://dnrec.delaware.gov/fish-wildlife/hunting/sunday/"
+        ]
+      },
+      "exceptions": [
+        {
+          "id": "de-resident-goose-outside-teal-zone",
+          "species": [
+            "canadaGoose"
+          ],
+          "label": "Resident Canada goose, outside September Teal Zone",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-09-25"
+            }
+          ],
+          "zone": "Outside September Teal Zone",
+          "sources": [
+            "https://www.eregulations.com/delaware/hunting/migratory-bird-hunting"
+          ]
+        },
+        {
+          "id": "de-resident-goose-inside-teal-zone",
+          "species": [
+            "canadaGoose"
+          ],
+          "label": "Resident Canada goose, inside September Teal Zone",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-09-04"
+            },
+            {
+              "start": "2026-09-14",
+              "end": "2026-09-25"
+            }
+          ],
+          "zone": "Inside September Teal Zone",
+          "note": "Sept 5-13, while teal season is open, standard hours apply (no extension).",
+          "sources": [
+            "https://www.eregulations.com/delaware/hunting/migratory-bird-hunting"
+          ]
+        },
+        {
+          "id": "de-light-goose-co",
+          "species": [
+            "snowGoose",
+            "rossGoose"
+          ],
+          "label": "Light Goose Conservation Order",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "note": "Late-winter/spring dates; third-party listing shows Feb-Apr 2027 with a free permit required. Confirm with DNREC.",
+          "sources": [
+            "https://huntingseason.com/states/delaware"
+          ]
+        }
+      ]
+    },
+    "FL": {
+      "name": "Florida",
+      "agency": "Florida Fish and Wildlife Conservation Commission",
+      "regulationsURL": "https://myfwc.com/hunting/regulations/",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "GA": {
+      "name": "Georgia",
+      "agency": "Georgia DNR Wildlife Resources Division",
+      "regulationsURL": "https://georgiawildlife.com",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "HI": {
+      "name": "Hawaii",
+      "agency": "Hawaii DLNR Division of Forestry and Wildlife",
+      "regulationsURL": "https://dlnr.hawaii.gov/dofaw/",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false,
+      "notes": "Likely little or no migratory waterfowl hunting; confirm before showing waterfowl hours."
+    },
+    "ID": {
+      "name": "Idaho",
+      "agency": "Idaho Department of Fish and Game",
+      "regulationsURL": "https://idfg.idaho.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "IL": {
+      "name": "Illinois",
+      "agency": "Illinois Department of Natural Resources",
+      "regulationsURL": "https://dnr.illinois.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "IN": {
+      "name": "Indiana",
+      "agency": "Indiana DNR Division of Fish and Wildlife",
+      "regulationsURL": "https://www.in.gov/dnr/fish-and-wildlife/",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "IA": {
+      "name": "Iowa",
+      "agency": "Iowa Department of Natural Resources",
+      "regulationsURL": "https://www.iowadnr.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "KS": {
+      "name": "Kansas",
+      "agency": "Kansas Department of Wildlife and Parks",
+      "regulationsURL": "https://ksoutdoors.com/Hunting",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "KY": {
+      "name": "Kentucky",
+      "agency": "Kentucky Department of Fish and Wildlife Resources",
+      "regulationsURL": "https://fw.ky.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "LA": {
+      "name": "Louisiana",
+      "agency": "Louisiana Department of Wildlife and Fisheries",
+      "regulationsURL": "https://www.wlf.louisiana.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "ME": {
+      "name": "Maine",
+      "agency": "Maine Department of Inland Fisheries and Wildlife",
+      "regulationsURL": "https://www.maine.gov/ifw/",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "MD": {
+      "name": "Maryland",
+      "agency": "Maryland DNR Wildlife and Heritage Service",
+      "regulationsURL": "https://dnr.maryland.gov/huntersguide/Pages/default.aspx",
+      "urlStatus": "verified",
+      "eregulationsURL": "https://www.eregulations.com/maryland/hunting",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": true,
+      "sundayMigratoryBirdHunting": {
+        "allowed": false,
+        "note": "Migratory game birds may not be hunted on Sundays.",
+        "sources": [
+          "https://www.eregulations.com/maryland/hunting/migratory-game-bird-hunting"
+        ]
+      },
+      "exceptions": [
+        {
+          "id": "md-early-resident-goose-east",
+          "species": [
+            "canadaGoose"
+          ],
+          "label": "Early resident Canada goose, Eastern zone",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-09-15"
+            }
+          ],
+          "zone": "Eastern",
+          "sources": [
+            "https://news.maryland.gov/dnr/2026/08/31/maryland-migratory-game-bird-hunting-seasons-begin-for-2026-2027/"
+          ]
+        },
+        {
+          "id": "md-early-resident-goose-west",
+          "species": [
+            "canadaGoose"
+          ],
+          "label": "Early resident Canada goose, Western zone",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-09-25"
+            }
+          ],
+          "zone": "Western",
+          "sources": [
+            "https://news.maryland.gov/dnr/2026/08/31/maryland-migratory-game-bird-hunting-seasons-begin-for-2026-2027/"
+          ]
+        },
+        {
+          "id": "md-dove-first-segment",
+          "species": [
+            "mourningDove"
+          ],
+          "label": "Dove, first segment",
+          "hours": {
+            "start": {
+              "time": "12:00"
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 0
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-10-17"
+            }
+          ],
+          "sources": [
+            "https://news.maryland.gov/dnr/2026/08/31/maryland-migratory-game-bird-hunting-seasons-begin-for-2026-2027/"
+          ]
+        }
+      ],
+      "openQuestions": "The 2026-27 guide lists an extended (half hour after sunset) season covering both zones beyond the September goose season, likely a late resident Canada goose season. Confirm dates in the guide before adding."
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "agency": "MassWildlife",
+      "regulationsURL": "https://www.mass.gov/orgs/division-of-fisheries-and-wildlife",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "MI": {
+      "name": "Michigan",
+      "agency": "Michigan Department of Natural Resources",
+      "regulationsURL": "https://michigan.gov/dnr/managing-resources/laws/regulations/waterfowl/when-and-where-to-hunt",
+      "urlStatus": "verified",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "MN": {
+      "name": "Minnesota",
+      "agency": "Minnesota Department of Natural Resources",
+      "regulationsURL": "https://www.dnr.state.mn.us/Regulations/Hunting",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "MS": {
+      "name": "Mississippi",
+      "agency": "Mississippi Department of Wildlife, Fisheries, and Parks",
+      "regulationsURL": "https://www.mdwfp.com/wildlife-hunting/general-hunting-rules-regulations",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "MO": {
+      "name": "Missouri",
+      "agency": "Missouri Department of Conservation",
+      "regulationsURL": "https://mdc.mo.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "MT": {
+      "name": "Montana",
+      "agency": "Montana Fish, Wildlife and Parks",
+      "regulationsURL": "https://fwp.mt.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "NE": {
+      "name": "Nebraska",
+      "agency": "Nebraska Game and Parks Commission",
+      "regulationsURL": "https://outdoornebraska.gov/guides-maps/hunting-guides/",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "NV": {
+      "name": "Nevada",
+      "agency": "Nevada Department of Wildlife",
+      "regulationsURL": "https://www.ndow.org",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "agency": "New Hampshire Fish and Game Department",
+      "regulationsURL": "https://www.wildlife.nh.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "agency": "NJDEP Fish and Wildlife",
+      "regulationsURL": "https://dep.nj.gov/njfw/hunting/",
+      "urlStatus": "verified",
+      "eregulationsURL": "https://www.eregulations.com/newjersey/hunting",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": true,
+      "sundayMigratoryBirdHunting": {
+        "allowed": false,
+        "note": "Migratory bird hunting is not permitted on Sunday in New Jersey.",
+        "sources": [
+          "https://dep.nj.gov/njfw/hunting/constant-nj-migratory-game-bird-regulations/"
+        ]
+      },
+      "exceptions": [
+        {
+          "id": "nj-sept-canada-goose",
+          "species": [
+            "canadaGoose"
+          ],
+          "label": "September Canada goose season",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-09-30"
+            }
+          ],
+          "zone": "statewide",
+          "sources": [
+            "https://dep.nj.gov/njfw/hunting/constant-nj-migratory-game-bird-regulations/",
+            "https://dep.nj.gov/njfw/hunting/migratory-game-bird-seasons/"
+          ]
+        },
+        {
+          "id": "nj-light-goose-co",
+          "species": [
+            "snowGoose",
+            "rossGoose"
+          ],
+          "label": "Light Goose Conservation Order",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "note": "Dates depend on the 2026 spring population count (TBD).",
+          "sources": [
+            "https://dep.nj.gov/njfw/hunting/constant-nj-migratory-game-bird-regulations/"
+          ]
+        }
+      ]
+    },
+    "NM": {
+      "name": "New Mexico",
+      "agency": "New Mexico Department of Game and Fish",
+      "regulationsURL": "https://wildlife.dgf.nm.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "NY": {
+      "name": "New York",
+      "agency": "NYS Department of Environmental Conservation",
+      "regulationsURL": "https://dec.ny.gov/things-to-do/hunting/hunting-trapping-regulations",
+      "urlStatus": "verified",
+      "eregulationsURL": "https://www.eregulations.com/newyork/hunting",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": true,
+      "sundayMigratoryBirdHunting": {
+        "allowed": null,
+        "note": "Not verified in this research."
+      },
+      "exceptions": [
+        {
+          "id": "ny-sept-canada-goose",
+          "species": [
+            "canadaGoose"
+          ],
+          "label": "September Canada goose season",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 30
+            }
+          },
+          "condition": "Only when all other waterfowl seasons in that zone are closed (not on youth/veteran hunt days that overlap).",
+          "note": "September dates vary by goose hunting area; app should show the extension only with a confirmed date range for the user's goose area.",
+          "sources": [
+            "https://www.eregulations.com/newyork/hunting/migratory-game-birds"
+          ]
+        },
+        {
+          "id": "ny-snow-goose-2026",
+          "species": [
+            "snowGoose"
+          ],
+          "label": "Snow goose (2026-27)",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": -30
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 0
+            }
+          },
+          "note": "DEC indicated snow goose seasons will likely return to federal frameworks for 2026-27, ending the half hour after sunset. Treat as standard hours unless DEC announces otherwise.",
+          "sources": [
+            "https://dec.ny.gov/things-to-do/hunting/migratory-game-bird/waterfowl-season-setting-places-to-hunt"
+          ]
+        },
+        {
+          "id": "ny-woodcock",
+          "species": [
+            "woodcock"
+          ],
+          "label": "Woodcock",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": 0
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 0
+            }
+          },
+          "note": "From the 2023-24 guide; confirm for 2026-27.",
+          "sources": [
+            "https://extapps.dec.ny.gov/docs/wildlife_pdf/huntguidemgb.pdf"
+          ]
+        }
+      ],
+      "areaNotes": "Perch River and Wilson Hill WMAs: waterfowl hunting a half hour before sunrise until noon (announced 2021). Other WMAs may differ."
+    },
+    "NC": {
+      "name": "North Carolina",
+      "agency": "North Carolina Wildlife Resources Commission",
+      "regulationsURL": "https://www.ncwildlife.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "ND": {
+      "name": "North Dakota",
+      "agency": "North Dakota Game and Fish Department",
+      "regulationsURL": "https://gf.nd.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "OH": {
+      "name": "Ohio",
+      "agency": "ODNR Division of Wildlife",
+      "regulationsURL": "https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/laws-regs-licenses/Ohio%20Hunting%20and%20Trapping%20Regulations%20ENGLISH.pdf",
+      "urlStatus": "verified",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": true,
+      "zones": "New waterfowl zones A, B, C take effect in 2026-27 (replacing Lake Erie/North/South).",
+      "sundayMigratoryBirdHunting": {
+        "allowed": null,
+        "note": "Not verified in this research."
+      },
+      "exceptions": [
+        {
+          "id": "oh-early-teal-goose",
+          "species": [
+            "teal",
+            "canadaGoose",
+            "cacklingGoose"
+          ],
+          "label": "Early teal and early Canada goose seasons",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": 0
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 0
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-05",
+              "end": "2026-09-13"
+            }
+          ],
+          "zone": "statewide",
+          "note": "Sunrise to sunset, NOT a half hour before sunrise.",
+          "sources": [
+            "https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-7-06"
+          ]
+        },
+        {
+          "id": "oh-dove",
+          "species": [
+            "mourningDove"
+          ],
+          "label": "Dove",
+          "hours": {
+            "start": {
+              "event": "sunrise",
+              "offsetMinutes": 0
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 0
+            }
+          },
+          "note": "Dove hours are sunrise to sunset.",
+          "sources": [
+            "https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/laws-regs-licenses/Ohio%20Hunting%20and%20Trapping%20Regulations%20ENGLISH.pdf"
+          ]
+        }
+      ],
+      "areaNotes": "Some wildlife areas post different hours ('unless posted')."
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "agency": "Oklahoma Department of Wildlife Conservation",
+      "regulationsURL": "https://www.wildlifedepartment.com",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "OR": {
+      "name": "Oregon",
+      "agency": "Oregon Department of Fish and Wildlife",
+      "regulationsURL": "https://myodfw.com",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "agency": "Pennsylvania Game Commission",
+      "regulationsURL": "https://www.pgc.pa.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false,
+      "notes": "Official PGC table with meridian-band adjustment is already built into the app. No Sunday hunting for migratory game birds in 2026-27 (per PGC table already in app)."
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "agency": "RI DEM Division of Fish and Wildlife",
+      "regulationsURL": "https://dem.ri.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "SC": {
+      "name": "South Carolina",
+      "agency": "South Carolina Department of Natural Resources",
+      "regulationsURL": "https://www.dnr.sc.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "SD": {
+      "name": "South Dakota",
+      "agency": "South Dakota Game, Fish and Parks",
+      "regulationsURL": "https://gfp.sd.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "TN": {
+      "name": "Tennessee",
+      "agency": "Tennessee Wildlife Resources Agency",
+      "regulationsURL": "https://www.tn.gov/twra",
+      "urlStatus": "homepage-unverified",
+      "eregulationsURL": "https://www.eregulations.com/tennessee",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "TX": {
+      "name": "Texas",
+      "agency": "Texas Parks and Wildlife Department",
+      "regulationsURL": "https://tpwd.texas.gov/regulations/outdoor-annual/",
+      "urlStatus": "verified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "UT": {
+      "name": "Utah",
+      "agency": "Utah Division of Wildlife Resources",
+      "regulationsURL": "https://wildlife.utah.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "VT": {
+      "name": "Vermont",
+      "agency": "Vermont Fish and Wildlife Department",
+      "regulationsURL": "https://vtfishandwildlife.com",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "VA": {
+      "name": "Virginia",
+      "agency": "Virginia Department of Wildlife Resources",
+      "regulationsURL": "https://dwr.virginia.gov/hunting/regulations/",
+      "urlStatus": "verified",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "WA": {
+      "name": "Washington",
+      "agency": "Washington Department of Fish and Wildlife",
+      "regulationsURL": "https://wdfw.wa.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "WV": {
+      "name": "West Virginia",
+      "agency": "West Virginia Division of Natural Resources",
+      "regulationsURL": "https://wvdnr.gov",
+      "urlStatus": "verified",
+      "eregulationsURL": "https://www.eregulations.com/westvirginia/hunting",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": true,
+      "sundayMigratoryBirdHunting": {
+        "allowed": true,
+        "note": "2024-25 migratory regs: waterfowl hunting permitted on Sundays on private and DNR public lands. Re-confirm in the 2026-27 migratory bird booklet.",
+        "sources": [
+          "https://www.eregulations.com/westvirginia/hunting/migratory-bird-hunting-regulations"
+        ]
+      },
+      "exceptions": [
+        {
+          "id": "wv-dove-opener",
+          "species": [
+            "mourningDove"
+          ],
+          "label": "Dove opening day",
+          "hours": {
+            "start": {
+              "time": "12:00"
+            },
+            "end": {
+              "event": "sunset",
+              "offsetMinutes": 0
+            }
+          },
+          "dateRanges": [
+            {
+              "start": "2026-09-01",
+              "end": "2026-09-01"
+            }
+          ],
+          "note": "Rest of dove season: a half hour before sunrise to sunset.",
+          "sources": [
+            "https://wvdnr.gov/west-virginia-unveils-new-dates-for-dove-woodcock-and-rail-hunting-seasons/"
+          ]
+        }
+      ],
+      "areaNotes": "McClintic WMA controlled waterfowl area has its own hours (the 2026-27 summary references a 1 p.m. close). Area-specific; confirm before adding."
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "agency": "Wisconsin Department of Natural Resources",
+      "regulationsURL": "https://dnr.wisconsin.gov/topic/hunt/regulations",
+      "urlStatus": "verified",
+      "publishesTimeTable": true,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    },
+    "WY": {
+      "name": "Wyoming",
+      "agency": "Wyoming Game and Fish Department",
+      "regulationsURL": "https://wgfd.wyo.gov",
+      "urlStatus": "homepage-unverified",
+      "publishesTimeTable": null,
+      "waterfowlDefaultHours": "federal",
+      "exceptionsResearched": false
+    }
+  }
+}
