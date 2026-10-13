@@ -48,7 +48,8 @@
       "urlStatus": "verified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "AR": {
       "name": "Arkansas",
@@ -57,7 +58,8 @@
       "urlStatus": "homepage-unverified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "CA": {
       "name": "California",
@@ -257,7 +259,8 @@
       "urlStatus": "verified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "KY": {
       "name": "Kentucky",
@@ -275,7 +278,8 @@
       "urlStatus": "homepage-unverified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "ME": {
       "name": "Maine",
@@ -392,12 +396,13 @@
       "urlStatus": "homepage-unverified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "MI": {
       "name": "Michigan",
       "agency": "Michigan Department of Natural Resources",
-      "regulationsURL": "https://michigan.gov/dnr/managing-resources/laws/regulations/waterfowl/when-and-where-to-hunt",
+      "regulationsURL": "https://www.michigan.gov/dnr/things-to-do/hunting/waterfowl",
       "urlStatus": "verified",
       "publishesTimeTable": true,
       "waterfowlDefaultHours": "federal",
@@ -446,7 +451,8 @@
       "urlStatus": "verified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "NV": {
       "name": "Nevada",
@@ -464,7 +470,8 @@
       "urlStatus": "homepage-unverified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "NJ": {
       "name": "New Jersey",
@@ -746,7 +753,8 @@
       "urlStatus": "homepage-unverified",
       "publishesTimeTable": null,
       "waterfowlDefaultHours": "federal",
-      "exceptionsResearched": false
+      "exceptionsResearched": false,
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "SC": {
       "name": "South Carolina",
@@ -865,7 +873,8 @@
           ]
         }
       ],
-      "areaNotes": "McClintic WMA controlled waterfowl area has its own hours (the 2026-27 summary references a 1 p.m. close). Area-specific; confirm before adding."
+      "areaNotes": "McClintic WMA controlled waterfowl area has its own hours (the 2026-27 summary references a 1 p.m. close). Area-specific; confirm before adding.",
+      "linkCheckNote": "Returned 403 to automated check on 2026-10-12; confirm in a browser."
     },
     "WI": {
       "name": "Wisconsin",
